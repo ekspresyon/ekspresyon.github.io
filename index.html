@@ -61,16 +61,45 @@
 		    width: 150px;
 		    height: 150px;
 		    margin-right: 1.5rem;
-		    margin-left: 7rem;
-
 		}
 		.typed-cursor{
 			font-size: 4rem;
 		}
-		.intro {
-			padding-left: 7rem;
-			max-width: 80%;
+		
+		.blow-up-mobile{
+			color: #f4f4f4;
+			font-size: 21rem;
+			font-family: 'Playfair Display', serif;
+			margin-top: -6rem;
+			position: absolute;
+			z-index: -1;
+			display: block;
 		}
+		.blow-up{
+			display: none;
+		}
+		@media only screen and (min-width: 720px){
+			.intro {
+				padding-left: 7rem;
+				max-width: 80%;
+			}
+			.blow-up{
+			color: #f4f4f4;
+			font-size: 21rem;
+			font-family: 'Playfair Display', serif;
+			margin-top: -6rem;
+			position: absolute;
+			z-index: -1;
+			display: block;
+			}
+			.blow-up-mobile{
+				display: none;
+			}
+			.headshot {
+			    margin-left: 7rem;
+			}
+		}
+
 		.job-title{
 			font-size: 1.2rem;
 			font-weight: 600;
@@ -115,7 +144,7 @@
 	<main>
 		<section id="intro" class="container mb-5">
 					<span class="blow-up">WELINA</span>
-					
+					<span class="blow-up-mobile">WF</span>
 					<div class="profile-wraper d-flex flex-row mb-5">
 						<img src="assets/img/thumb2.jpeg" class="headshot float-start rounded-circle" alt="Headshot of Welina">
 						<h1 id="typed" class="name-title align-self-center"></h1>
