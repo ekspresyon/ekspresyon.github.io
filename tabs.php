@@ -117,8 +117,8 @@
 	    	<div class="container">
 	    		<div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
 			      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-					<li><a href="resume.php" class="nav-link px-2 link-dark">Resume</a></li>
-					<li><a href="tabs.php" class="nav-link px-2 link-dark">Tabs</a></li>
+					<li><a href="resume.html" class="nav-link px-2 link-dark">Resume</a></li>
+					<li><a href="tabs.html" class="nav-link px-2 link-dark">Tabs</a></li>
 			      </ul>
 				</div>
 	      	</div>
