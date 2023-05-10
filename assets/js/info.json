@@ -114,11 +114,8 @@ data = {
 				{
 					"title":"TERC - The Inquiry Project: Particle Magnifier",
 					"published_on":"03/21/2021",
-					"description":"Recreating a key interactive leaning module in JavaScript to remedy the end of support for Flash in 2020. The module demonstrated the behavior of particles under variable temperature. 
-					<br>Library used:
-					- P5.js",
+					"description":"Recreating a key interactive leaning module in JavaScript to remedy the end of support for Flash in 2020. The module demonstrated the behavior of particles under variable temperature.<br>Library used:<br>- P5.js",
 					"link":"https://inquiryproject.terc.edu/curriculum/curriculum5/resources/particlemag/index.html"
-
 				},
 				{
 					"title":"",
