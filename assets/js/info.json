@@ -1,7 +1,7 @@
 data = {
 	"basic_profile": {
-		"first_name":"Welina",
-		"last_nam": "Farah",
+		"first_name":"David",
+		"last_nam": "Delonnay",
 		"middle_initial": ""
 	},
 	"contact_info": {
@@ -24,10 +24,14 @@ data = {
 			"start":"2020",
 			"end":"Current",
 			"job_description": [
-				"Build relationships with signed-on clients engaging with Joslin educational content",
-				"Guide and coach world-renowned Joslin clinicians to present in a timely manner according to predetermined parameters",
-				"Organize and maintain inventory of over 1,000 pieces of diabetes content alongside Technology Support Manager",
-				"Collaborate with peers on organization-wide operational initiatives: marketing strategies, database organizing, creating internal processes and standard operating procedures, etc."
+				"Provide support for a network of 1300+ websites",
+				"Perform system wide updates",
+				"Run targetted test geared towards sytem maintenance",
+				"Troubleshoot and investigte web aplications for bug fixes",
+				"Bulk data management in MySQL",
+				"Develop custom web application for specialized processes",
+				"Add client requesed enhencements to websites",
+				"Consult with clients on best options based on their website/web applications needs"
 			]
 		},
 		{	
@@ -38,10 +42,12 @@ data = {
 			"start":"2019",
 			"end":"2022",
 			"job_description": [
-				"Oversaw day-to-day scheduling and complex calendar management for Dean and teams",
-				"Owned and maintained databases, records, internal processes, and documentation at scale",
-				"Managed inter-departmental projects, composed and communicated project timelines",
-				"Collaborated on organization-wide operational initiatives and projects"
+				"Front end development and Debugging",
+				"Application architecture design",
+				"Consulting on best practices for web application development",
+				"Consulting on front end layout for best user experience and performance",
+				"Custom web application development using PHP, MySQL",
+				"Dynamic website template creation using JavaScript, Bootstrap"
 			]
 		},
 		{	
@@ -50,12 +56,11 @@ data = {
 			"city":"Boston",
 			"state":"MA",
 			"start":"2014",
-			"end":"Current",
+			"end":"2021",
 			"job_description": [
-				"Managed classrooms of up to 120 undergraduate students; kept track of progress in course",
-				"Facilitated lectures as professor on an as-needed basis; created lesson plan and objectives",
-				"Advised and instructed students during regularly held office hours, coached undergraduates",
-				"Tracked and documented lectures across three classes for four semesters; collected and archived notes for students who missed class"
+				"Subcontractor for wedding photograpy agency",
+				"Documented 6 to 8 hour long celebrations",
+				"Succesfully documnted over 16 wedding a year"
 			]
 		},
 		{	
@@ -66,10 +71,12 @@ data = {
 			"start":"2015",
 			"end":"2018",
 			"job_description": [
-				"Managed classrooms of up to 120 undergraduate students; kept track of progress in course",
-				"Facilitated lectures as professor on an as-needed basis; created lesson plan and objectives",
-				"Advised and instructed students during regularly held office hours, coached undergraduates",
-				"Tracked and documented lectures across three classes for four semesters; collected and archived notes for students who missed class"
+				"Responsible for all web development, including front and back end development",
+				"Designed and developed back end applications",
+				"Debugged and/or repaired Windows and/or Mac computers (hardware and software)",
+				"Trained staff on the use of different platforms towards better productivity",
+				"Responsible for all IT inquiries and maintenance",
+				"Maintained studio inventory and supply acquisition"
 			]
 		},
 		{	
@@ -80,34 +87,38 @@ data = {
 			"start":"2009",
 			"end":"2010",
 			"job_description": [
-				"Managed classrooms of up to 120 undergraduate students; kept track of progress in course",
-				"Facilitated lectures as professor on an as-needed basis; created lesson plan and objectives",
-				"Advised and instructed students during regularly held office hours, coached undergraduates",
-				"Tracked and documented lectures across three classes for four semesters; collected and archived notes for students who missed class"
+				"Managed a team of photographers for the university student runned newspaper",
+				"Scheduling portatraits with different subjects for weekly publications",
+				"Selecting and editing images based on designer and printer parameter requests"
 			]
 		},
+		{	
+			"job_title":"Freelance Web Designer &amp; Developer",
+			"company":"Self employed",
+			"city":"Boston",
+			"state":"MA",
+			"start":"2009",
+			"end":"Current",
+			"job_description": [
+				"Design and develop websites for multiple clients (WordPress API)",
+				"Maintain all aspects of websites",
+				"Conduct one-on-one client consultations for best build option per project",
+				"Custom plugin development, mobile ready layout, cross-platform compatibility, responsive design"
+			]
+		},
+
 	],
 	"portfolio":
 		{
 			"articles":[
 				{
-					"title":"Do you 'KnowThyProf'? Northeastern student's new website offers a RateMyProfessors alternative",
-					"published_on":"03/21/2012",
-					"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-					"link":"http://archive.boston.com/lifestyle/blogs/thenextgreatgeneration/2012/03/do_you_knowthyprof_northeaster.html"
+					"title":"TERC - The Inquiry Project: Particle Magnifier",
+					"published_on":"03/21/2021",
+					"description":"Recreating a key interactive leaning module in JavaScript to remedy the end of support for Flash in 2020. The module demonstrated the behavior of particles under variable temperature. 
+					<br>Library used:
+					- P5.js",
+					"link":"https://inquiryproject.terc.edu/curriculum/curriculum5/resources/particlemag/index.html"
 
-				},
-				{
-					"title":"OPINION: Even if it's work-related, it's OK to 'power off' once in a while",
-					"published_on":"04/14/2012",
-					"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-					"link":"http://archive.boston.com/lifestyle/blogs/thenextgreatgeneration/2012/04/opinion_even_if_its_work-relat.html"
-				},
-				{
-					"title":"Protesting the Oscars? Try Protesting Movies",
-					"published_on":"07/18/2022",
-					"description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-					"link":"https://www.umassmedia.com/opinions/protesting-the-oscars-try-protesting-movies/article_a84a6aec-c23e-11e5-a138-df5853e96fc2.html"
 				},
 				{
 					"title":"",
