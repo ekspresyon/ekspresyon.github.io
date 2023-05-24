@@ -13,9 +13,30 @@ data = {
 	"education": {
 		"school":"UMass Boston",
 		"state":"MA",
-		"major":"Bioloy"
+		"major":"Biology"
 	},
-	"work_experiance": [
+	"work_experience": [
+		{	
+			"job_title":"Dance Instructor",
+			"company":"Dance Republic",
+			"city":"Wellesley",
+			"state":"MA",
+			"start":"2015",
+			"end":"2018",
+			"job_description": [
+				"Taught private and group lessons",
+				"Choreographed group/pro-am performances for seasonal showcases",
+				"Responsible for sound engineering during seasonal showcase",
+				"Responsible for custom sound editing (cut and stitch) for seasonal showcase performaces",
+				"Prepared lesson plans/syllabi for 4 weeks and 6 weeks session classes",
+				"Designed and developed web applications",
+				"Debugged and/or repaired Windows and/or Mac computers (hardware and software)",
+				"Trained staff on the use of different platforms towards better productivity",
+				"Responsible for all IT inquiries and maintenance",
+				"Maintained studio inventory and supply acquisition",
+				"Provided front desk support when necessary"
+			]
+		},
 		{	
 			"job_title":"Web Developer",
 			"company":"Boston University",
@@ -26,12 +47,12 @@ data = {
 			"job_description": [
 				"Provide support for a network of 1300+ websites",
 				"Perform system wide updates",
-				"Run targetted test geared towards sytem maintenance",
-				"Troubleshoot and investigte web aplications for bug fixes",
+				"Run targeted tests geared towards system maintenance",
+				"Troubleshoot and investigte web applications for bug fixes",
 				"Bulk data management in MySQL",
 				"Develop custom web application for specialized processes",
-				"Add client requesed enhencements to websites",
-				"Consult with clients on best options based on their website/web applications needs"
+				"Add client requested enhancements to websites",
+				"Consult with clients on best options based on their website/web application needs"
 			]
 		},
 		{	
@@ -42,16 +63,16 @@ data = {
 			"start":"2019",
 			"end":"2022",
 			"job_description": [
-				"Front end development and Debugging",
+				"Front end development and debugging",
 				"Application architecture design",
 				"Consulting on best practices for web application development",
 				"Consulting on front end layout for best user experience and performance",
-				"Custom web application development using PHP, MySQL",
-				"Dynamic website template creation using JavaScript, Bootstrap"
+				"Custom web application development using PHP and MySQL",
+				"Dynamic website template creation using JavaScript and Bootstrap"
 			]
 		},
 		{	
-			"job_title":"Wedding photographer",
+			"job_title":"Wedding Photographer",
 			"company":"Orion Photogroup",
 			"city":"Boston",
 			"state":"MA",
@@ -64,44 +85,28 @@ data = {
 			]
 		},
 		{	
-			"job_title":"Dance Instructor",
-			"company":"Dance Republic",
-			"city":"Wellesley",
-			"state":"MA",
-			"start":"2015",
-			"end":"2018",
-			"job_description": [
-				"Responsible for all web development, including front and back end development",
-				"Designed and developed back end applications",
-				"Debugged and/or repaired Windows and/or Mac computers (hardware and software)",
-				"Trained staff on the use of different platforms towards better productivity",
-				"Responsible for all IT inquiries and maintenance",
-				"Maintained studio inventory and supply acquisition"
-			]
-		},
-		{	
 			"job_title":"Photo Editor",
-			"company":"University of Massachusetts Boston",
+			"company":"UMass Boston",
 			"city":"Boston",
 			"state":"MA",
 			"start":"2009",
 			"end":"2010",
 			"job_description": [
-				"Managed a team of photographers for the university student runned newspaper",
-				"Scheduling portatraits with different subjects for weekly publications",
+				"Managed a team of photographers for the university student run newspaper",
+				"Scheduling portraits with different subjects for weekly publications",
 				"Selecting and editing images based on designer and printer parameter requests"
 			]
 		},
 		{	
-			"job_title":"Freelance Web Designer &amp; Developer",
-			"company":"Self employed",
+			"job_title":"Freelance Web Designer, Developer",
+			"company":"Self Employed",
 			"city":"Boston",
 			"state":"MA",
 			"start":"2009",
 			"end":"Current",
 			"job_description": [
 				"Design and develop websites for multiple clients (WordPress API)",
-				"Maintain all aspects of websites",
+				"Maintain all aspects of website",
 				"Conduct one-on-one client consultations for best build option per project",
 				"Custom plugin development, mobile ready layout, cross-platform compatibility, responsive design"
 			]
@@ -127,6 +132,7 @@ data = {
 		}
 	,
 	"skills": [
+		"Dance",
 		"GitHub",
 		"WordPress development",
 		"PHP application development",
