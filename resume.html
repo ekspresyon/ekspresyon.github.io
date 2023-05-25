@@ -251,7 +251,7 @@
 				var published_on = articles[article].published_on
 				var article_link = articles[article].link	
 				var article_description = articles[article].description			
-				var article_card = '<div class="article col"><h3 class="article-title"><a href="'+article_link+'">'+article_title+'</a></h3><span class="published-date">'+published_on+'</span><p class="article-description mt-3">'+article_description+'</p>'
+				var article_card = '<div class="article col"><h3 class="article-title"><a href="'+article_link+'" target="_blank">'+article_title+'</a></h3><span class="published-date">'+published_on+'</span><p class="article-description mt-3">'+article_description+'</p>'
 				document.querySelector('#articles-listing').innerHTML += article_card
 			}
 			
