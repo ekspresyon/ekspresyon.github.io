@@ -17,27 +17,6 @@ data = {
 	},
 	"work_experience": [
 		{	
-			"job_title":"Dance Instructor",
-			"company":"Dance Republic",
-			"city":"Wellesley",
-			"state":"MA",
-			"start":"2015",
-			"end":"2018",
-			"job_description": [
-				"Taught private and group lessons",
-				"Choreographed group/pro-am performances for seasonal showcases",
-				"Responsible for sound engineering during seasonal showcase",
-				"Responsible for custom sound editing (cut and stitch) for seasonal showcase performaces",
-				"Prepared lesson plans/syllabi for 4 weeks and 6 weeks session classes",
-				"Designed and developed web applications",
-				"Debugged and/or repaired Windows and/or Mac computers (hardware and software)",
-				"Trained staff on the use of different platforms towards better productivity",
-				"Responsible for all IT inquiries and maintenance",
-				"Maintained studio inventory and supply acquisition",
-				"Provided front desk support when necessary"
-			]
-		},
-		{	
 			"job_title":"Web Developer",
 			"company":"Boston University",
 			"city":"Boston",
@@ -69,6 +48,27 @@ data = {
 				"Consulting on front end layout for best user experience and performance",
 				"Custom web application development using PHP and MySQL",
 				"Dynamic website template creation using JavaScript and Bootstrap"
+			]
+		},
+		{	
+			"job_title":"Dance Instructor",
+			"company":"Dance Republic",
+			"city":"Wellesley",
+			"state":"MA",
+			"start":"2015",
+			"end":"2018",
+			"job_description": [
+				"Taught private and group lessons",
+				"Choreographed group/pro-am performances for seasonal showcases",
+				"Responsible for sound engineering during seasonal showcase",
+				"Responsible for custom sound editing (cut and stitch) for seasonal showcase performaces",
+				"Prepared lesson plans/syllabi for 4 weeks and 6 weeks session classes",
+				"Designed and developed web applications",
+				"Debugged and/or repaired Windows and/or Mac computers (hardware and software)",
+				"Trained staff on the use of different platforms towards better productivity",
+				"Responsible for all IT inquiries and maintenance",
+				"Maintained studio inventory and supply acquisition",
+				"Provided front desk support when necessary"
 			]
 		},
 		{	
