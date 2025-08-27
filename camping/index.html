@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
+        <meta name="generator" content="Astro v5.13.2" />
+        <title>Cape Cod Camping Trip</title>
+        <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/product/" />
+        <script src="/docs/5.3/assets/js/color-modes.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180" />
+        <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+        <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+        <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json" />
+        <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9" />
+        <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico" />
+        <meta name="theme-color" content="#712cf9" />
+        <link href="product.css" rel="stylesheet" />
+        <style>
+            .bd-placeholder-img {
+                font-size: 1.125rem;
+                text-anchor: middle;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                user-select: none;
+            }
+            @media (min-width: 768px) {
+                .bd-placeholder-img-lg {
+                    font-size: 3.5rem;
+                }
+            }
+            .b-example-divider {
+                width: 100%;
+                height: 3rem;
+                background-color: #0000001a;
+                border: solid rgba(0, 0, 0, 0.15);
+                border-width: 1px 0;
+                box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
+            }
+            .b-example-vr {
+                flex-shrink: 0;
+                width: 1.5rem;
+                height: 100vh;
+            }
+            .bi {
+                vertical-align: -0.125em;
+                fill: currentColor;
+            }
+            .nav-scroller {
+                position: relative;
+                z-index: 2;
+                height: 2.75rem;
+                overflow-y: hidden;
+            }
+            .nav-scroller .nav {
+                display: flex;
+                flex-wrap: nowrap;
+                padding-bottom: 1rem;
+                margin-top: -1px;
+                overflow-x: auto;
+                text-align: center;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+            }
+            .btn-bd-primary {
+                --bd-violet-bg: #712cf9;
+                --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+                --bs-btn-font-weight: 600;
+                --bs-btn-color: var(--bs-white);
+                --bs-btn-bg: var(--bd-violet-bg);
+                --bs-btn-border-color: var(--bd-violet-bg);
+                --bs-btn-hover-color: var(--bs-white);
+                --bs-btn-hover-bg: #6528e0;
+                --bs-btn-hover-border-color: #6528e0;
+                --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+                --bs-btn-active-color: var(--bs-btn-hover-color);
+                --bs-btn-active-bg: #5a23c8;
+                --bs-btn-active-border-color: #5a23c8;
+            }
+            .bd-mode-toggle {
+                z-index: 1500;
+            }
+            .bd-mode-toggle .bi {
+                width: 1em;
+                height: 1em;
+            }
+            .bd-mode-toggle .dropdown-menu .active .bi {
+                display: block !important;
+            }
+            .anchorLink {
+                scroll-margin-top: 80px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <nav class="navbar navbar-expand-md bg-dark sticky-top border-bottom" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand d-md-none" href="#">
+                    <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#aperture"></use></svg>
+                    Camping
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasLabel">Menu</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav flex-grow-1 justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" aria-label="Aperture">
+                                    <svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#aperture"></use></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#s1" onclick="bkmark('#s1')">Packing list</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#s2" onclick="bkmark('#s2')">Group gear</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#s3" onclick="bkmark('#s3')">Sleeping</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#s4" onclick="bkmark('#s4')">Parking</a></li>
+                            <script javascript>
+                                function bkmark(url) {
+                                    window.location.replace(url);
+                                    window.location.reload(true);
+                                }
+                            </script>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div class="container py-5">
+                <h1>Nickerson Camping trip </h1>
+                <h4>August 29th - September 1st 2025</h4>
+                <h6 class="pb-2"><em> Nickerson State park, Area 6X, Site 133</em></h6>
+                
+                <div>
+                    <p>Welcome, everyone, to our camping trip at Nickerson State Park!
+                    <br>We're so glad you're here and can't wait to share this beautiful spot on Cape Cod with all of you!</p>
+
+                    <p>Here you should find all the details you'll need to prepare for the trip, from directions and campsite information to a packing list and maybe group activity schedule.
+                    <br>Thank you for joining us, and let's get ready for a great time together!</p>    
+                </div>
+                <div>
+                    <h2 id="s1" class="anchorLink">Packing list</h2>
+                    <p>Here's a suggested packing list to help you prepare for our camping trip. Feel free to customize it based on your personal needs and preferences!</p>
+                    <ul>
+                        <li>Tent (if not provided by the group)</li>
+                        <li>Sleeping bag and sleeping pad</li>
+                        <li>Camping pillow</li>
+                        <li>Clothing suitable for the weather (layers, rain gear, etc.)</li>
+                        <li>Hiking boots or sturdy shoes</li>
+                        <li>Personal toiletries (toothbrush, toothpaste, biodegradable soap, etc.)</li>
+                        <li>Insect repellent and sunscreen</li>
+                        <li>Water bottle or hydration system</li>
+                        <li>Flashlight or headlamp with extra batteries</li>
+                        <li>Personal medications and first aid kit</li>
+                        <li>Snacks and food for personal meals</li>
+                        <li>Camping chair or seating pad</li>
+                        <li>Trash bags (Leave No Trace principles)</li>
+                        <li>Camera or smartphone for photos</li>
+                        <li>Bycicle and riding gear (if you plan to ride with the group)</li>
+                        <li>Optional: Books, games, or other entertainment</li>
+                    </ul>
+                    <p><em>* The bycicles will be loaded on Hamdi and Alina's car. There are 9 projected campers and 10 bycycle spots. So it should all go smoothly.</em></p>
+
+                    <h2 id="s2" class="anchorLink">Group Gear</h2>
+                    <p>The group will be providing the following items, so no need to bring these unless you want extras!</p>
+                    <ul>
+                        <li>Tents (Hamdi, Alina, Ioana)</li>
+                        <li>Cooking equipment (stove, fuel, pots, pans) - David</li>
+                        <li>Utensils, plates, and cups - David</li>
+                        <li>Trash bags - David</li>            
+                        <li>Coolers for food storage - Valdir</li>
+                        <li>Food - Shared responsibility</li>
+                        <li>Water - There will be a case of drinking water bottles</li>
+                        <li>First aid kit - Shared responsibility</li>
+                    </ul>
+                    <p><em>If you have any questions or need help with anything, feel free to reach out on the group chat!</em></p>
+                     
+                    <h2 id="s3" class="anchorLink">Sleeping arangements</h2>
+                    <p>We currently have a total of 3 tents for the trip. Here's the current sleeping arrangement:
+                        <br> - Tent 1: Hamdi and friends
+                        <br> - Tent 2: Alina and friends
+                        <br> - Tent 3: Friends and friends
+                    </p>
+                    <p><em>*If anyone has any special requests or needs regarding sleeping arrangements, please let us know as soon as possible so we can accommodate everyone comfortably.</em></p>
+                
+
+                    <h2 id="s4" class="anchorLink">Parking</h2>
+                    <p>Only 2 cars will be allowed to park on the camp site (State park rules). We anticipate that the cars carriying the bikes will have priority. 
+                    <br> However, there is overflow parking available at the reservation. Please make sure to park in designated areas only.</p>
+                </div>
+            </div>
+        </main>
+        <footer class="">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3712.5411764623113!2d-70.02970812324519!3d41.75862477125522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89fb6a5cc00f9c47%3A0x60efe306d9ce35fb!2sNickerson%20State%20Park!5e1!3m2!1sen!2sus!4v1756306164133!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    </body>
+</html>
