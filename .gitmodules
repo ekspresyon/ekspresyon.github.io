@@ -1,0 +1,3 @@
+[submodule "lib/sec"]
+	path = lib/sec
+	url = https://github.com/ekspresyon/sec-
