@@ -1,1 +1,139 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MITRE Map Preview</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; font-family: sans-serif; font-size: 14px; }
+        th { background-color: #f2f2f2; text-align: left; padding: 12px; border: 1px solid #ddd; }
+        td { padding: 12px; border: 1px solid #ddd; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        tr:hover { background-color: #f1f1f1; }
+    </style>
+</head>
+<body>
+    <table border="1" class="dataframe table table-striped">
+      <thead>
+        <tr style="text-align: right;">
+          <th>Tactic</th>
+          <th>Technique #</th>
+          <th>Technique Name</th>
+          <th>Test #</th>
+          <th>Test Name</th>
+          <th>Test GUID</th>
+          <th>Executor Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>defense-evasion</td>
+          <td>T1548.002</td>
+          <td>Abuse Elevation Control Mechanism: Bypass User Account Control</td>
+          <td>23</td>
+          <td>UAC Bypass with WSReset Registry Modification</td>
+          <td>3b96673f-9c92-40f1-8a3e-ca060846f8d9</td>
+          <td>powershell</td>
+        </tr>
+        <tr>
+          <td>privilege-escalation</td>
+          <td>T1548.002</td>
+          <td>Abuse Elevation Control Mechanism: Bypass User Account Control</td>
+          <td>21</td>
+          <td>WinPwn - UAC Bypass DccwBypassUAC technique</td>
+          <td>2b61977b-ae2d-4ae4-89cb-5c36c89586be</td>
+          <td>powershell</td>
+        </tr>
+        <tr>
+          <td>execution</td>
+          <td>T1053.005</td>
+          <td>Scheduled Task/Job: Scheduled Task</td>
+          <td>1</td>
+          <td>Scheduled Task Startup Script</td>
+          <td>fec27f65-db86-4c2d-b66c-61945aee87c2</td>
+          <td>command_prompt</td>
+        </tr>
+        <tr>
+          <td>persistence</td>
+          <td>T1053.005</td>
+          <td>Scheduled Task/Job: Scheduled Task</td>
+          <td>1</td>
+          <td>Scheduled Task Startup Script</td>
+          <td>fec27f65-db86-4c2d-b66c-61945aee87c2</td>
+          <td>command_prompt</td>
+        </tr>
+        <tr>
+          <td>command-and-control</td>
+          <td>T1001.002</td>
+          <td>Data Obfuscation via Steganography</td>
+          <td>1</td>
+          <td>Steganographic Tarball Embedding</td>
+          <td>c7921449-8b62-4c4d-8a83-d9281ac0190b</td>
+          <td>powershell</td>
+        </tr>
+        <tr>
+          <td>collection</td>
+          <td>T1039</td>
+          <td>Data from Network Shared Drive</td>
+          <td>1</td>
+          <td>Copy a sensitive File over Administrative share with copy</td>
+          <td>6ed67921-1774-44ba-bac6-adb51ed60660</td>
+          <td>command_prompt</td>
+        </tr>
+        <tr>
+          <td>lateral-movement</td>
+          <td>T1021.001</td>
+          <td>Remote Services: Remote Desktop Protocol</td>
+          <td>4</td>
+          <td>Disable NLA for RDP via Command Prompt</td>
+          <td>01d1c6c0-faf0-408e-b368-752a02285cb2</td>
+          <td>command_prompt</td>
+        </tr>
+        <tr>
+          <td>credential-access</td>
+          <td>T1558.003</td>
+          <td>Steal or Forge Kerberos Tickets: Kerberoasting</td>
+          <td>6</td>
+          <td>WinPwn - Kerberoasting</td>
+          <td>78d10e20-c874-45f2-a9df-6fea0120ec27</td>
+          <td>powershell</td>
+        </tr>
+        <tr>
+          <td>discovery</td>
+          <td>T1018</td>
+          <td>Remote System Discovery</td>
+          <td>17</td>
+          <td>Enumerate Active Directory Computers with Get-AdComputer</td>
+          <td>97e89d9e-e3f5-41b5-a90f-1e0825df0fdf</td>
+          <td>powershell</td>
+        </tr>
+        <tr>
+          <td>impact</td>
+          <td>T1490</td>
+          <td>Inhibit System Recovery</td>
+          <td>1</td>
+          <td>Windows - Delete Volume Shadow Copies</td>
+          <td>43819286-91a9-4369-90ed-d31fb4da2c01</td>
+          <td>command_prompt</td>
+        </tr>
+        <tr>
+          <td>initial-access</td>
+          <td>T1078.003</td>
+          <td>Valid Accounts: Local Accounts</td>
+          <td>6</td>
+          <td>WinPwn - Loot local Credentials - powerhell kittie</td>
+          <td>9e9fd066-453d-442f-88c1-ad7911d32912</td>
+          <td>powershell</td>
+        </tr>
+        <tr>
+          <td>exfiltration</td>
+          <td>T1030</td>
+          <td>Data Transfer Size Limits</td>
+          <td>2</td>
+          <td>Network-Based Data Transfer in Small Chunks</td>
+          <td>f0287b58-f4bc-40f6-87eb-692e126e7f8f</td>
+          <td>powershell</td>
+        </tr>
+      </tbody>
+    </table>
+</body>
+</html>
