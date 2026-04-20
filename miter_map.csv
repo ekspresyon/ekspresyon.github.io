@@ -1,0 +1,13 @@
+Tactic,Technique #,Technique Name,Test #,Test Name,Test GUID,Executor Name
+defense-evasion,T1548.002,Abuse Elevation Control Mechanism: Bypass User Account Control,23,UAC Bypass with WSReset Registry Modification,3b96673f-9c92-40f1-8a3e-ca060846f8d9,powershell
+privilege-escalation,T1548.002,Abuse Elevation Control Mechanism: Bypass User Account Control,21,WinPwn - UAC Bypass DccwBypassUAC technique,2b61977b-ae2d-4ae4-89cb-5c36c89586be,powershell
+execution,T1053.005,Scheduled Task/Job: Scheduled Task,1,Scheduled Task Startup Script,fec27f65-db86-4c2d-b66c-61945aee87c2,command_prompt
+persistence,T1053.005,Scheduled Task/Job: Scheduled Task,1,Scheduled Task Startup Script,fec27f65-db86-4c2d-b66c-61945aee87c2,command_prompt
+command-and-control,T1001.002,Data Obfuscation via Steganography,1,Steganographic Tarball Embedding,c7921449-8b62-4c4d-8a83-d9281ac0190b,powershell
+collection,T1039,Data from Network Shared Drive,1,Copy a sensitive File over Administrative share with copy,6ed67921-1774-44ba-bac6-adb51ed60660,command_prompt
+lateral-movement,T1021.001,Remote Services: Remote Desktop Protocol,4,Disable NLA for RDP via Command Prompt,01d1c6c0-faf0-408e-b368-752a02285cb2,command_prompt
+credential-access,T1558.003,Steal or Forge Kerberos Tickets: Kerberoasting,6,WinPwn - Kerberoasting,78d10e20-c874-45f2-a9df-6fea0120ec27,powershell
+discovery,T1018,Remote System Discovery,17,Enumerate Active Directory Computers with Get-AdComputer,97e89d9e-e3f5-41b5-a90f-1e0825df0fdf,powershell
+impact,T1490,Inhibit System Recovery,1,Windows - Delete Volume Shadow Copies,43819286-91a9-4369-90ed-d31fb4da2c01,command_prompt
+initial-access,T1078.003,Valid Accounts: Local Accounts,6,WinPwn - Loot local Credentials - powerhell kittie,9e9fd066-453d-442f-88c1-ad7911d32912,powershell
+exfiltration,T1030,Data Transfer Size Limits,2,Network-Based Data Transfer in Small Chunks,f0287b58-f4bc-40f6-87eb-692e126e7f8f,powershell
