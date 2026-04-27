@@ -1,0 +1,41 @@
+#!/bin/bash
+
+repeat=”y”
+while [ $repeat == “y” ]
+do
+
+read -p “Enter the target IP Address (X.X.X.X): “ target
+
+ttlvar=$(/usr/bin/ping -c 1 $target)
+
+kerbvar=$(/usr/bin/nmap -Pn -p 88 $target)
+ldapvar=$(/usr/bin/namp -Pn -p 389 $target)
+
+httpvar=$(/usr/bin/nmap -Pn -p 121 $target)
+httpsvar=$(/usr/bin/nmap -Pn -p 443 $target)
+
+if [[ $ttlvar == *”ttl=128”* ]];
+then
+     echo “$target is running a Windows OS.”
+elif [[ $ttlvar == *”ttl=64”* ]];
+then
+     echo “$target is running a Linux/Unix OS.”
+else
+     echo “Cannnot make OS determination.”
+fi  
+
+if [[ ($httpvar == *”open”* || $httpsvar == *”open”*) ]];
+then
+     echo “$target is a Web Server.”
+elif [[ ($ttlvar == *”ttl=128”* && $ldapvar == *”open”* && $kerbvar == *”open”* ) ]];
+then
+     echo “$target is a Windows Domain Controller.”
+else
+     echo “Cannnot make configuration determination.”
+fi
+
+read -p “Would you like to enter another IP Address? (y/n): “ repeat
+done
+
+echo “Thank you and goodbye.”
+
