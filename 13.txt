@@ -1,1 +1,24 @@
+$UsrIPAddr = Read-Host “Please enter the /24 Network Address you would like to scan (X.X.X.X)”
+Write-Host $UsrIPAddr
 
+$IPsplit = $UsrIPAddr.Split(“.”)
+$NetAddr = ($IPsplit[0]+”.”+$IPsplit[1]+”.”+$IPsplit[2]+”.”)
+Write-Host $NetAddr
+
+$HostAddr = (1..254)
+$HostAddr | ForEach-Object {Write-Host “$($NetAddr)$($_)”}
+
+$HostAddr = (1..254)
+$IPAddrPing = @()
+$HostAddr | ForEach-Object {$IPAddrPing += “$($NetAddr)$($_)”}
+Write-Host $IPAddrPing
+
+Get-CimInstance -ClassName Win32_PingStatus -Filter “Address = ‘192.168.0.1’” | Select-Object address, StatusCode
+
+Write-Host “The following hosts have been found.”
+ForEach($IPAddr in $IPAddrPing)
+{
+     #Ping each IP Address and display live hosts
+     $PingStatus = Get-CimInstance -ClassName Win32_PingStatus -Filter “Address = ‘$IPAddr’” | Select-Object address, StatusCode
+     If ($PingStatus.StatusCode -eq 0){Write-Host $IPAddr}
+}
