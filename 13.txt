@@ -22,3 +22,23 @@ ForEach($IPAddr in $IPAddrPing)
      $PingStatus = Get-CimInstance -ClassName Win32_PingStatus -Filter “Address = ‘$IPAddr’” | Select-Object address, StatusCode
      If ($PingStatus.StatusCode -eq 0){Write-Host $IPAddr}
 }
+
+
+
+## Kali
+chmod 744 os-config_checker.sh ping_sweep.sh
+
+#!/bin/bash
+read -p “Enter the /24 Network Address you would like to scan (X.X.X.X): “ usripaddr
+echo $usripaddr
+
+netaddr=$(echo $usripaddr | cut -d”.” -f1-3)
+echo $netaddr
+
+for ip in $(seq 1 254);
+do
+echo $netaddr.$ip
+done
+
+ping -c 1 $netaddr.$ip | grep “bytes from” | cut -d “ “ -f 4 | tr -d “:”
+done
