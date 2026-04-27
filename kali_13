@@ -1,0 +1,10 @@
+#!/bin/bash
+read -p “Enter the /24 Network Address you would like to scan (X.X.X.X): “ usripaddr
+
+netaddr=$(echo $usripaddr | cut -d”.” -f1-3)
+
+for ip in $(seq 1 254);
+do
+
+ping -c 1 $netaddr.$ip | grep “bytes from” | cut -d “ “ -f 4 | tr -d “:”
+done
